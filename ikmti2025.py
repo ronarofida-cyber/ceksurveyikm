@@ -3,7 +3,7 @@ import pandas as pd
 
 # Function to load and clean data
 def load_data():
-    DATABASE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSVXymtIKUVehVgi31G380txOK3h2DGRjPXms8BqgmgSuHhwoPGblhltLAJvLGdmQ/pub?gid=246851748&single=true&output=csvv"
+    DATABASE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSVXymtIKUVehVgi31G380txOK3h2DGRjPXms8BqgmgSuHhwoPGblhltLAJvLGdmQ/pub?gid=246851748&single=true&output=csv"
     RESPONSE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSVXymtIKUVehVgi31G380txOK3h2DGRjPXms8BqgmgSuHhwoPGblhltLAJvLGdmQ/pub?gid=1337827672&single=true&output=csv"
 
     # Load both course database and response data
