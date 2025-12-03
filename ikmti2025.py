@@ -11,8 +11,8 @@ def load_data():
     response_data = pd.read_csv(RESPONSE_SHEET_URL)
 
     # Clean up data (strip and lowercase for consistency)
-    course_database['Mata Kuliah'] = course_database['Mata Kuliah'].str.strip().str.upper()
-    response_data['Mata Kuliah'] = response_data['Mata Kuliah'].str.strip().str.upper()
+    course_database['Matakuliah'] = course_database['Matakuliah'].str.strip().str.upper()
+    response_data['Nama mata kuliah yang diampu sesuai nama dosen yang dipilih sebelumnya'] = response_data['Nama mata kuliah yang diampu sesuai nama dosen yang dipilih sebelumnya'].str.strip().str.upper()
 
     # Ensure NIM columns are of the same type for comparison
     course_database['NIM'] = course_database['NIM'].astype(str)
@@ -42,8 +42,8 @@ if st.button("Show"):
 
         if not student_courses.empty:
             # Check if the courses are filled in response data
-            student_courses['IKM Sudah Terisi'] = student_courses['Mata Kuliah'].apply(
-                lambda x: 'Sudah' if x in response_data_filtered['Mata Kuliah'].values else 'Belum'
+            student_courses['IKM Sudah Terisi'] = student_courses['Matakuliah'].apply(
+                lambda x: 'Sudah' if x in response_data_filtered['Nama mata kuliah yang diampu sesuai nama dosen yang dipilih sebelumnya'].values else 'Belum'
             )
 
             # Apply color formatting for the 'IKM Sudah Terisi' column
