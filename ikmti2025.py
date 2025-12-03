@@ -3,8 +3,8 @@ import pandas as pd
 
 # Function to load and clean data
 def load_data():
-    DATABASE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSVXymtIKUVehVgi31G380txOK3h2DGRjPXms8BqgmgSuHhwoPGblhltLAJvLGdmQ/pub?gid=246851748&single=true&output=csv"
-    RESPONSE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSVXymtIKUVehVgi31G380txOK3h2DGRjPXms8BqgmgSuHhwoPGblhltLAJvLGdmQ/pub?gid=1337827672&single=true&output=csv"
+    DATABASE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTMvqtDGEsFiviYP0gOt-4oX0lgNj0y-kXtGxWrSqh0L1hBQ8XwZlUS6wtbUegI6RPmihvYkiVTeDtE/pub?gid=0&single=true&output=csv"
+    RESPONSE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRhG34LYzkc-urSC1iMxv0bNP1fXQ0wb7HmGFppmQcoukxdSp6Bpx4ARGm9PPD20bclCN65ybGhQo4E/pub?gid=0&single=true&output=csv"
 
     # Load both course database and response data
     course_database = pd.read_csv(DATABASE_SHEET_URL)
